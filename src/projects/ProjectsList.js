@@ -4,7 +4,10 @@ import ProjectSpace from './ProjectSpace'
 function ProjectsList() {
     return (
         <div>
-            <ProjectSpace />
+            <ProjectSpace 
+            name="Chirag"
+            address="Jain"
+            image="washkaro-logo.png"/>
             <ProjectSpace />
             <ProjectSpace />
             <ProjectSpace />
