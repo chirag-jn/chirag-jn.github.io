@@ -1,19 +1,12 @@
 import React from 'react';
-import { HashRouter as DefaultRouter, Switch, Route } from 'react-router-dom';
+import Title from './Title';
+// import { HashRouter as DefaultRouter, Switch, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <DefaultRouter>
-      <Switch>
-        <Route
-          exact
-          path="/"
-          component={() => {
-            return <>Hello World!</>;
-          }}
-        />
-      </Switch>
-    </DefaultRouter>
+      <div className="App">
+          <Title />
+      </div>
   );
 };
 
