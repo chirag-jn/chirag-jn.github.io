@@ -1,10 +1,10 @@
 import React from 'react';
-// import logo from './images/washkaro-logo.png'
+import './ProjectSpace.css';
 
 function ProjectSpace(props) {
   const { name, image, address } = props;
   return (
-    <div>
+    <div className="ProjectSpace">
       <h1>{name}</h1>
       <img
         src={`${process.env.PUBLIC_URL}images/${image}`}
