@@ -1,7 +1,22 @@
 .ProjectsList {
-    width: calc(100% - 80px);
+    /*width: calc(100% - 80px);*/
     margin: auto;
     display: grid;
+    /*flex is 1d, grid is 2d*/
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
+    grid-gap: 2em;
+    max-width: 1200px;
+    padding: 2em;
+}
+
+@media only screen and (max-width: 960px) {
+    .ProjectsList {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .ProjectsList {
+        grid-template-columns: 1fr;
+    }
 }
