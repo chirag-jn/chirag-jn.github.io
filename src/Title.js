@@ -20,7 +20,7 @@ function Title() {
           className="nav-link"
           activeClassName="nav-link-active"
           exact
-          to="/projectpage"
+          to="/contact"
         >
           Contact
         </NavLink>
@@ -30,7 +30,18 @@ function Title() {
           className="nav-link"
           activeClassName="nav-link-active"
           exact
-          to="/projectpage"
+          to="/"
+          // TODO: Change Resume Link
+        >
+          Resume
+        </NavLink>
+      </div>
+      <div className="item">
+        <NavLink
+          className="nav-link"
+          activeClassName="nav-link-active"
+          exact
+          to="/projects"
         >
           Projects
         </NavLink>
@@ -40,7 +51,7 @@ function Title() {
           className="nav-link"
           activeClassName="nav-link-active"
           exact
-          to="/projectpage"
+          to="/"
         >
           About
         </NavLink>

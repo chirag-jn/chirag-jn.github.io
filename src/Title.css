@@ -5,6 +5,7 @@
     justify-content: left;
     align-items: baseline;
     float: left;
+    /*visibility: hidden;*/
     padding: 0.7em;
     margin-bottom: 2em;
     /*background-color: rgb(26, 188, 15);*/
