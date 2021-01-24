@@ -1,8 +1,8 @@
 import React from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
-import Title from './Title';
+import Title from './title/Title';
 import ProjectsList from './projects/ProjectsList';
-import Footer from './Footer';
+import Footer from './footer/Footer';
 import About from './about/About';
 import Contact from './contact/Contact';
 import ProjectPage from './projects/ProjectPage';
