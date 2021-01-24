@@ -1,15 +1,37 @@
 .Title {
     box-sizing: border-box;
-    width: 100%;
+    width: fit-content;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    align-items: baseline;
+    float: left;
+    padding: 0.7em;
+    margin-bottom: 2em;
+    /*background-color: rgb(26, 188, 15);*/
+    color: #000;
+    text-decoration-color: #09cc7f;
+}
+
+.item {
+    box-sizing: border-box;
+    float: right;
+    display: flex;
+    justify-content: right;
     align-items: baseline;
     padding: 1em;
-    margin-bottom: 2em;
-    background-color: rgb(192, 45, 26);
+    /*background-color: rgb(192, 45, 26);*/
     color: #fff;
-  }
+}
 
-  .Title-Subtitle {
-    color: rgba(255, 255, 255, 0.75);
-  }
+.Title .nav-link {
+    /*display: inline-block;*/
+    /*padding: 0.5em 1em;*/
+    /*color: rgba(255, 255, 255, 0.835);*/
+    /*font-weight: bold;*/
+    /*text-decoration: none;*/
+}
+
+.Title .nav-link-active {
+    /*color: #fff;*/
+    /*border-bottom: 2px solid;*/
+}

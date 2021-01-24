@@ -8,8 +8,8 @@ function ProjectSpace(props) {
       <h1>{name}</h1>
       <img
         src={`${process.env.PUBLIC_URL}images/${image}`}
-        width="300"
-        height="300"
+        width="200"
+        height="200"
         alt="Hello"
       />
       <div>{address}</div>
