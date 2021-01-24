@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Box, Flex, Text, Link as cLink } from '@chakra-ui/react';
 import { CloseIcon, ArrowDownIcon } from '@chakra-ui/icons';
 import Logo from './Logo';
 
@@ -60,7 +60,7 @@ const Header = (props) => {
         >
           <MenuItems to="/about">About</MenuItems>
           <MenuItems to="/projects">Projects</MenuItems>
-          <MenuItems to="/">Resume</MenuItems>
+          <MenuItems to="/resumelink">Resume</MenuItems>
           <MenuItems to="/contact" isLast>
             Contact
           </MenuItems>
