@@ -8,19 +8,23 @@ import Home from './home/Home';
 import Contact from './contact/Contact';
 import ProjectPage from './projects/ProjectPage';
 
+import { ChakraProvider } from '@chakra-ui/react';
+
 const App = () => {
   return (
-    <Router>
-      <div className="App">
-        <Title />
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/project/:id" component={ProjectPage} />
-        <Route path="/projects" component={ProjectsList} />
-        <Route path="/contact" component={Contact} />
-        <Footer />
-      </div>
-    </Router>
+    <ChakraProvider>
+      <Router>
+        <div className="App">
+          <Title />
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/project/:id" component={ProjectPage} />
+          <Route path="/projects" component={ProjectsList} />
+          <Route path="/contact" component={Contact} />
+          <Footer />
+        </div>
+      </Router>
+    </ChakraProvider>
   );
 };
 
