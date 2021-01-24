@@ -6,29 +6,17 @@ function Title() {
   return (
     <div>
       <div className="Title">
-        <NavLink
-          className="nav-link"
-          activeClassName="nav-link-active"
-          exact
-          to="/"
-        >
+        <NavLink exact to="/">
           <h2>Chirag Jain</h2>
         </NavLink>
       </div>
       <div className="item">
-        <NavLink
-          className="nav-link"
-          activeClassName="nav-link-active"
-          exact
-          to="/contact"
-        >
+        <NavLink exact to="/contact">
           Contact
         </NavLink>
       </div>
       <div className="item">
         <NavLink
-          className="nav-link"
-          activeClassName="nav-link-active"
           exact
           to="/"
           // TODO: Change Resume Link
@@ -37,22 +25,12 @@ function Title() {
         </NavLink>
       </div>
       <div className="item">
-        <NavLink
-          className="nav-link"
-          activeClassName="nav-link-active"
-          exact
-          to="/projects"
-        >
+        <NavLink exact to="/projects">
           Projects
         </NavLink>
       </div>
       <div className="item">
-        <NavLink
-          className="nav-link"
-          activeClassName="nav-link-active"
-          exact
-          to="/"
-        >
+        <NavLink exact to="/">
           About
         </NavLink>
       </div>
