@@ -30,7 +30,7 @@ function Title() {
         </NavLink>
       </div>
       <div className="item">
-        <NavLink exact to="/">
+        <NavLink exact to="/about">
           About
         </NavLink>
       </div>
