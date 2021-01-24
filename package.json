@@ -22,7 +22,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "reactstrap": "^8.6.0",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.0",
+    "prop-types": "^15.7.2"
   },
   "scripts": {
     "predeploy": "npm run build",
