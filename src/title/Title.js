@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Box, Flex, Text, Link as cLink } from '@chakra-ui/react';
+import { Box, Flex, Text, Link } from '@chakra-ui/react';
 import { CloseIcon, ArrowDownIcon } from '@chakra-ui/icons';
+import { Link as ReactLink } from 'react-router-dom';
 import Logo from './Logo';
 
 const MenuItems = (props) => {
@@ -14,7 +14,24 @@ const MenuItems = (props) => {
       // eslint-disable-next-line react/jsx-props-no-spreading
       {...rest}
     >
-      <Link to={to}>{children}</Link>
+      <Link as={ReactLink} to={to}>
+        {children}
+      </Link>
+    </Text>
+  );
+};
+
+const MenuItemsExternal = (props) => {
+  const { children, isLast, ...rest } = props;
+  return (
+    <Text
+      mb={{ base: isLast ? 0 : 8, sm: 0 }}
+      mr={{ base: 0, sm: isLast ? 0 : 8 }}
+      display="block"
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      {...rest}
+    >
+      {children}
     </Text>
   );
 };
@@ -60,7 +77,14 @@ const Header = (props) => {
         >
           <MenuItems to="/about">About</MenuItems>
           <MenuItems to="/projects">Projects</MenuItems>
-          <MenuItems to="/resumelink">Resume</MenuItems>
+          <MenuItemsExternal>
+            <Link
+              href="https://drive.google.com/file/d/1h_T8ODN-axDdKFIXX_mP7wFsQhpHk5rN/view?usp=sharing"
+              isExternal
+            >
+              Resume
+            </Link>
+          </MenuItemsExternal>
           <MenuItems to="/contact" isLast>
             Contact
           </MenuItems>

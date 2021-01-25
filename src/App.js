@@ -21,16 +21,6 @@ const App = () => {
           <Route path="/project/:id" component={ProjectPage} />
           <Route path="/projects" component={ProjectsList} />
           <Route path="/contact" component={Contact} />
-          <Route
-            exact
-            path="/resumelink"
-            component={() => {
-              window.location.replace(
-                'https://drive.google.com/file/d/1h_T8ODN-axDdKFIXX_mP7wFsQhpHk5rN/view?usp=sharing',
-              );
-              return null;
-            }}
-          />
           <Footer />
         </div>
       </Router>
