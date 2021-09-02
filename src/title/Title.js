@@ -79,7 +79,7 @@ const Header = (props) => {
           <MenuItems to="/projects">Projects</MenuItems>
           <MenuItemsExternal>
             <Link
-              href="https://drive.google.com/file/d/1h_T8ODN-axDdKFIXX_mP7wFsQhpHk5rN/view?usp=sharing"
+              href="https://drive.google.com/file/d/1cF7-87SJZNUKwdKX973aIakrvs9aOnRn/view?usp=sharing"
               isExternal
             >
               Resume
