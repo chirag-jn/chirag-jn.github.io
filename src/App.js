@@ -1,27 +1,29 @@
 import React from 'react';
-import { HashRouter as Router, Route } from 'react-router-dom';
-
-import Title from './title/Title';
-import ProjectsList from './projects/ProjectsList';
-import Footer from './footer/Footer';
-import About from './about/About';
-import Home from './home/Home';
-import Contact from './contact/Contact';
-import ProjectPage from './projects/ProjectPage';
+import { IconButton } from '@chakra-ui/button';
+import { FaSun, FaMoon, FaInstagram, FaTelegram, FaGithub, FaLinkedIn, FaFacebook } from 'react-icons/fa';
+import { Flex, VStack, Heading } from '@chakra-ui/react';
 
 const App = () => {
   return (
-    <Router>
-    <div className="App">
-        <Title />
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/project/:id" component={ProjectPage} />
-        <Route path="/projects" component={ProjectsList} />
-        <Route path="/contact" component={Contact} />
-        <Footer />
-    </div>
-    </Router>
+    <VStack p={5}>
+      <Flex w="100%">
+        <Heading ml="8" fontWeight="semibold" color="cyan.400">
+          Chirag Jain
+        </Heading>
+        <IconButton icon={<FaSun />} isRound="true" />
+      </Flex>
+    </VStack>
+    // <Router>
+    // <div className="App">
+    //     <Title />
+    //     <Route exact path="/" component={Home} />
+    //     <Route path="/about" component={About} />
+    //     <Route path="/project/:id" component={ProjectPage} />
+    //     <Route path="/projects" component={ProjectsList} />
+    //     <Route path="/contact" component={Contact} />
+    //     <Footer />
+    // </div>
+    // </Router>
   );
 };
 
