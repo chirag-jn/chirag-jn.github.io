@@ -1,7 +1,8 @@
 import React from 'react';
 import { IconButton } from '@chakra-ui/button';
-import { FaSun, FaMoon, FaInstagram, FaTelegram, FaGithub, FaLinkedIn, FaFacebook } from 'react-icons/fa';
-import { Flex, VStack, Heading, useColorMode } from '@chakra-ui/react';
+import { FaSun, FaMoon } from 'react-icons/fa';
+import { Flex, VStack, Heading, useColorMode, Spacer } from '@chakra-ui/react';
+import Social from './components/Social';
 
 const App = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -13,13 +14,15 @@ const App = () => {
         <Heading ml="8" fontWeight="semibold" color="cyan.400">
           Chirag Jain
         </Heading>
+        <Spacer />
+        <Social />
+        <IconButton
+          ml={8}
+          icon={isDark ? <FaSun /> : <FaMoon />}
+          isRound="true"
+          onClick={toggleColorMode}
+        />
       </Flex>
-      <IconButton
-        ml={8}
-        icon={isDark ? <FaSun /> : <FaMoon />}
-        isRound="true"
-        onClick={toggleColorMode}
-      />
     </VStack>
     // <Router>
     // <div className="App">
