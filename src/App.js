@@ -3,6 +3,7 @@ import { IconButton } from '@chakra-ui/button';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import { Flex, VStack, Heading, useColorMode, Spacer } from '@chakra-ui/react';
 import Social from './components/Social';
+import Header from './components/Header';
 
 const App = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -23,6 +24,7 @@ const App = () => {
           onClick={toggleColorMode}
         />
       </Flex>
+      <Header />
     </VStack>
     // <Router>
     // <div className="App">
