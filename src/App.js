@@ -25,6 +25,7 @@ const App = () => {
         />
       </Flex>
       <Header />
+      <Social />
     </VStack>
     // <Router>
     // <div className="App">
