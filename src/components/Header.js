@@ -27,11 +27,11 @@ export default function Header({ name, dp }) {
         alignSelf="flex-start"
       >
         <Box mt={isNotSmallerScreen ? '0' : '16'} alignSelf="flex-start">
-          <Text fontSize="5x1" fontWeight="semibold">
+          <Text fontSize="5xl" fontWeight="semibold">
             Hi, I am
           </Text>
           <Text
-            fontSize="6x1"
+            fontSize="6xl"
             fontWeight="bold"
             bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
             bgClip="text"
