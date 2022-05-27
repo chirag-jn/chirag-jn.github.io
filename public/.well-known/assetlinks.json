@@ -1,0 +1,11 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.rutgers.whatsviral",
+      "sha256_cert_fingerprints":
+      ["FD:C4:E1:0B:97:D1:3F:02:70:A2:BC:BB:EA:82:6C:00:92:E0:3E:3F:2A:93:B0:AF:A1:1B:C0:1E:6E:A8:3A:A1",
+       "9D:E2:A2:AE:EE:37:77:15:EC:3E:F2:7A:FD:FE:4A:C3:92:1D:71:8B:22:6E:1E:8D:23:E3:18:0D:4C:7E:85:E4",
+       "3B:A6:77:91:91:1D:31:67:25:EC:3E:B5:01:E0:ED:C1:F8:F2:9C:E8:C8:2D:27:7B:EB:6E:BE:1E:9F:72:A6:21"]
+    }
+  }]
